@@ -84,7 +84,7 @@ match enter_task:
         print("\nЗадача 4: Пользователь вводит целое положительное число, программа должна вернуть строку в виде римского числа\n")
         while True:
             enter_dec = int(input("Введите десятичное число: "))
-            if enter_dec < 0:  # if not a positive int print message and ask for input again
+            if enter_dec < 0:
                 print("Введено отрицательное число, повторите ввод")
                 continue
             Decimals = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
