@@ -101,5 +101,22 @@ match enter_task:
             total = ''.join(roman_total)
             print(f"Римское число: {total}")
             break
+    case "5":
+        print("\nЗадача 5: Пользователь вводит данные, проверить - являются ли они положительным вещественным числом.\n"
+              "Не использовать встроенные функции для проверки, только методы данных и конструкцию IF. \n"
+              "(Дополнительное задание, по желанию - проверка на отрицательные вещественные числа)\n")
+        enter_num = input("Введите число: ")
+        if enter_num[-1] == ".":
+            print(f"{enter_num} - число не вещественное")
+        else:
+            float(enter_num)
+            if "." not in enter_num and "-" not in enter_num:
+                print(f"{enter_num} - число вещественное целое положительное")
+            if "." not in enter_num and "-" in enter_num:
+                print(f"{enter_num} - число вещественное целое отрицательное")
+            if "." in enter_num and "-" not in enter_num:
+                print(f"{enter_num} - число вещественное дробное положительное")
+            if "." in enter_num and "-" in enter_num:
+                print(f"{enter_num} - число вещественное дробное отрицательное")
     case _:
         print("Невернный ввод. Выход из программы")
