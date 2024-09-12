@@ -1,6 +1,7 @@
 enter_task = input("Введите номер задачи по теме 'Базовые типы данных' от 1 до 5: ")
 
 match enter_task:
+
     case "1":
         print("\nЗадача 1: Пользователь вводит пятизначное число. Программа должна зеркально отразить центральные три цифры.\n"
                 "Первая и последняя остаются на местах.\n")
@@ -24,6 +25,7 @@ match enter_task:
                 else:
                     print("Введено неизвестное значение. Выход из программы")
                     break
+
     case "2":
         print("\nЗадача 2: Отпуск. Пользователь вводит сколько дней осталось до ближайшего отпуска.\n"
               "Программа должна вывести количество выходных дней до отпуска, если учесть, что выходные\n"
@@ -47,6 +49,7 @@ match enter_task:
         print(f"Дата понедельника на текущей неделе - {start_date.strftime("%d.%m.%Y")}\n"
               f"Дата начала отпуска - {end_date.strftime("%d.%m.%Y")}\n"
               f"Количество выходных до отпуска: {num_weekends}")
+
     case "3":
         print("\nЗадача 3: Пользователь вводит длину и ширину плитки шоколада, а также размер куска, который хочет отломить.\n"
               "Программа должна вычислить - можно ли совершить подобный разлом или нет, \n"
@@ -76,5 +79,27 @@ match enter_task:
             print("Можно разделить шоколадку")
         else:
             print("Нельзя разделить шоколадку")
+
+    case "4":
+        print("\nЗадача 4: Пользователь вводит целое положительное число, программа должна вернуть строку в виде римского числа\n")
+        while True:
+            enter_dec = int(input("Введите десятичное число: "))
+            if enter_dec < 0:  # if not a positive int print message and ask for input again
+                print("Введено отрицательное число, повторите ввод")
+                continue
+            Decimals = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+            Romans = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
+            roman_total = []
+            while enter_dec != 0:
+                for val in range(len(Decimals)):
+                    if enter_dec >= Decimals[val]:
+                        dec = Decimals[val]
+                        roman = Romans[val]
+                diff = enter_dec - dec
+                roman_total.append(roman)
+                enter_dec = diff
+            total = ''.join(roman_total)
+            print(f"Римское число: {total}")
+            break
     case _:
         print("Невернный ввод. Выход из программы")
