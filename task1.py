@@ -47,3 +47,5 @@ match enter_task:
         print(f"Дата понедельника на текущей неделе - {start_date.strftime("%d.%m.%Y")}\n"
               f"Дата начала отпуска - {end_date.strftime("%d.%m.%Y")}\n"
               f"Количество выходных до отпуска: {num_weekends}")
+    case _:
+        print("Невернный ввод. Выход из программы")
