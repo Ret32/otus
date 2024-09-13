@@ -13,10 +13,10 @@ match enter_task:
                 revers_num = enter_num[0:1] + enter_num[-2:0:-1] + enter_num[4:5]
                 enter_num = int(enter_num)
                 revers_num = int(revers_num)
-                print(f"Введено число с верной длинной. Ваше число: {enter_num}, реверсивное число в середине: {revers_num}")
+                print(f'Введено число с верной длинной. Ваше число: {enter_num}, реверсивное число в середине: {revers_num}')
                 break
             else:
-                user_enter = input("Введено короткое число, попробуйте еще раз. Продолжить (да/нет)? ")
+                user_enter = input("Введено число длинной != 5, попробуйте еще раз. Продолжить (да/нет)? ")
                 if user_enter.lower() == 'нет':
                     print("Выход из программы")
                     break
@@ -46,23 +46,26 @@ match enter_task:
 
         num_weekends = len(weekend_days)
 
-        print(f"Дата понедельника на текущей неделе - {start_date.strftime("%d.%m.%Y")}\n"
-              f"Дата начала отпуска - {end_date.strftime("%d.%m.%Y")}\n"
-              f"Количество выходных до отпуска: {num_weekends}")
+        print(f'Дата понедельника на текущей неделе - {start_date.strftime("%d.%m.%Y")}\n'
+              f'Дата начала отпуска - {end_date.strftime("%d.%m.%Y")}\n'
+              f'Количество выходных до отпуска: {num_weekends}')
 
     case "3":
         print("\nЗадача 3: Пользователь вводит длину и ширину плитки шоколада, а также размер куска, который хочет отломить.\n"
               "Программа должна вычислить - можно ли совершить подобный разлом или нет, \n"
               "если учесть, что ломать можно только по прямой\n")
-        print("Введите размер шоколадки (Д*Ш): ")
         size_chocolate = []
-        for i in range(2):
-            x = int(input())
-            size_chocolate.append(x)
-        print(f"Введенный размер шоколадки: {size_chocolate}")
 
-        flag = False
+        enter_length = int(input("Введите длину шоколада: "))
+        size_chocolate.append(enter_length)
+        enter_width = int(input("Введите ширину шоколада: "))
+        size_chocolate.append(enter_width)
+
+        print(f'Введенный размер шоколадки (Д*Ш): {size_chocolate}')
+
         enter_size = int(input("Введите размер кусочка шоколада: "))
+        flag = False
+
         for size in size_chocolate:
             piece_choc = enter_size / size
             #    print(piece_choc)
@@ -99,7 +102,7 @@ match enter_task:
                 roman_total.append(roman)
                 enter_dec = diff
             total = ''.join(roman_total)
-            print(f"Римское число: {total}")
+            print(f'Римское число: {total}')
             break
 
     case "5":
@@ -108,16 +111,16 @@ match enter_task:
               "(Дополнительное задание, по желанию - проверка на отрицательные вещественные числа)\n")
         enter_num = input("Введите число: ")
         if enter_num[-1] == ".":
-            print(f"{enter_num} - число не вещественное")
+            print(f'{enter_num} - число не вещественное')
         else:
             float(enter_num)
             if "." not in enter_num and "-" not in enter_num:
-                print(f"{enter_num} - число вещественное целое положительное")
+                print(f'{enter_num} - число вещественное целое положительное')
             if "." not in enter_num and "-" in enter_num:
-                print(f"{enter_num} - число вещественное целое отрицательное")
+                print(f'{enter_num} - число вещественное целое отрицательное')
             if "." in enter_num and "-" not in enter_num:
-                print(f"{enter_num} - число вещественное дробное положительное")
+                print(f'{enter_num} - число вещественное дробное положительное')
             if "." in enter_num and "-" in enter_num:
-                print(f"{enter_num} - число вещественное дробное отрицательное")
+                print(f'{enter_num} - число вещественное дробное отрицательное')
     case _:
         print("Невернный ввод. Выход из программы")
