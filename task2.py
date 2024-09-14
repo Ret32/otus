@@ -47,30 +47,19 @@ match enter_task:
 
         import string
 
-        while True:
-            total_alpha = string.ascii_lowercase + string.ascii_uppercase + string.digits
-            enter_word = input("Введите слово для шифрования (английский язык): ")
-            if enter_word in total_alpha:
-                enter_shift = int(input("Введите значение сдвига: "))
-                cript = ""
+        enter_word = input("Введите слово для шифрования (английский язык): ")
+        enter_shift = int(input("Введите значение сдвига: "))
 
-                for elem in enter_word:
-                    if elem in total_alpha:
-                        cript += total_alpha[(total_alpha).index(elem) + enter_shift]
-                    else:
-                        cript += elem
+        total_alpha = string.ascii_lowercase + string.ascii_uppercase + string.digits
 
-                print("Оригинальный текст:", enter_word)
-                print("Зашифрованный текст:", cript)
+        cript=""
+        for elem in enter_word:
+            if elem in total_alpha:
+                cript += total_alpha[(total_alpha).index(elem) + enter_shift]
             else:
-                user_enter = input("Введеное слово не латиница, попробуйте еще раз (да/нет)?")
-                if user_enter.lower() == 'нет':
-                    print("Выход из программы")
-                    break
-                elif user_enter.lower() == 'да':
-                    continue
-                else:
-                    print("Введено неизвестное значение. Выход из программы")
-                    break
+                cript += elem
+
+        print("Оригинальный текст:",enter_word)
+        print("Зашифрованный текст:",cript)
     case _:
         print("Невернный ввод. Выход из программы")
