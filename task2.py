@@ -40,5 +40,26 @@ match enter_task:
             rle.append(symbol)
         print("".join(rle))
 
+    case "4":
+        print("\nЗадача 4: Шифр Цезаря. Пользователь вводит строку и ключ шифра,\n"
+              "программа должна вывести зашифрованную строку (со сдвигом по ключу).\n"
+              "Сдвиг циклический. Используем только латинский алфавит, пробелы не шифруются\n")
+
+        import string
+
+        enter_word = input("Введите слово для шифрования (английский язык): ")
+        enter_shift = int(input("Введите значение сдвига: "))
+
+        total_alpha = string.ascii_lowercase + string.ascii_uppercase + string.digits
+
+        cript=""
+        for elem in enter_word:
+            if elem in total_alpha:
+                cript += total_alpha[(total_alpha).index(elem) + enter_shift]
+            else:
+                cript += elem
+
+        print("Оригинальный текст:",enter_word)
+        print("Зашифрованный текст:",cript)
     case _:
         print("Невернный ввод. Выход из программы")
