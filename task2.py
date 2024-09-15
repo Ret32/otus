@@ -30,6 +30,8 @@ match enter_task:
         chk_free = True
         a = 0
         c = 0
+        num_line = -1
+        num_seats = -1
 
         for a in range(count_line):
             list_seats = []
@@ -62,8 +64,11 @@ match enter_task:
                             while d + e < len(sub_list_line) and sub_list_line[d] == sub_list_line[d + e]:
                                 e += 1
                             if e >= enter_value:
-                                print(f'Есть свободные места рядом в ряду {c} в количестве {e} шт')
+                                #print(f'Есть свободные места рядом в ряду {c} в количестве {e} шт')
                                 chk_free = False
+                                if num_line == -1:
+                                    num_line = c
+                                    num_seats = e
                             d += e
                         else:
                             d += 1
@@ -72,7 +77,9 @@ match enter_task:
                 else:
                     break
             if chk_free is True:
-                print("Нет свободных рядов")
+                print("\nНет свободных рядов")
+            elif chk_free is False and num_line > -1:
+                print(f'\nЕсть свободные места рядом в ряду {num_line} в количестве {num_seats} шт')
 
     case "3":
         print("\nЗадача 3: Написать упрощенную версию алгоритма RLE.\n"
