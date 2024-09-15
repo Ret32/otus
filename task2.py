@@ -125,5 +125,9 @@ match enter_task:
 
         print("Оригинальный текст:",enter_word)
         print("Зашифрованный текст:",cript)
+
+    case "5":
+        pass
+
     case _:
         print("Невернный ввод. Выход из программы")
