@@ -127,7 +127,54 @@ match enter_task:
         print("Зашифрованный текст:",cript)
 
     case "5":
-        pass
+        print("\nЗадача 5: Табель успеваемости. Пользователь в бесконечном цикле (пока не будет введена пустая строка)\n"
+              "вводит строки вида: 'название предмета' 'фамилия ученика' 'оценка'. После окончания ввода\n"
+              "программа выводит в консоль Название предмета, далее список учеников и все их оценки в виде таблицы\n")
+
+        list_jornal = []
+        grouped_values = {}
+        chk_enter = True
+        a = 0
+        c = 0
+        enter_jornal = ""
+
+        while chk_enter:
+            for a in range(1):
+                jornal = []
+                for b in range(3):
+                    if b == 0:
+                        enter_jornal = input(f'Введите Предмет ученика {c}: ')
+                    elif b == 1:
+                        enter_jornal = input(f'Введите ФИО ученика {c}: ')
+                    elif b == 2:
+                        enter_jornal = input(f'Введите Оценку ученика {c}: ')
+                    if len(enter_jornal) > 0:
+                        element = enter_jornal
+                        jornal.append(element)
+                    else:
+                        chk_enter = False
+                        break
+                if chk_enter:
+                    list_jornal.append(jornal)
+                else:
+                    break
+            c += 1
+        if len(list_jornal) > 0:
+            print("\nИтоговый журнал оценок:", list_jornal)
+            # list_jornal = [['Математика', 'Иванов', '5'], ['Математика', 'Иванов', '4'], ['Литература', 'Иванов', '3'], ['Математика', 'Петров', '5'], ['Литература', 'Сидоров', '3'], ['Литература', 'Петров', '5'], ['Литература', 'Иванов', '4'], ['Математика', 'Сидоров', '3'], ['Математика', 'Петров', '5']]
+            for sublist in list_jornal:
+                key = sublist[0]
+                value = sublist[-2:]
+                if key not in grouped_values:
+                    grouped_values[key] = []
+                grouped_values[key].append(value)
+            for key, value in grouped_values.items():
+                print(f"\n{key}:")
+                value.sort()
+                for i in value:
+                    for j in i:
+                        print(j, end=" ")
+                    print("", sep='\n')
 
     case _:
         print("Невернный ввод. Выход из программы")
