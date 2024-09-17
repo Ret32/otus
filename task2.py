@@ -36,7 +36,9 @@ match enter_task:
         for a in range(count_line):
             list_seats = []
             for b in range(count_seats):
-                enter_sits = int(input(f'Введите бронирование сидений в ряду {a}, № сидения - {b} (0-место свободно, 1-место занято): '))
+                enter_sits = int(input(f'Введите бронирование сидений в ряду {a}, № сидения - {b} \n'
+                                       f'Ввод осуществляется поочередно по каждому сидению в виде параметра 0 или 1\n,'
+                                       f'(0-место свободно, 1-место занято). Подтверждение через клавишу "Enter": '))
                 if enter_sits in (0, 1):
                     element = enter_sits
                     list_seats.append(element)
