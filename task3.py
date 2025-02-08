@@ -118,13 +118,13 @@ match enter_task:
 
             def validate_name(name):
                 if name and name.isalpha():
-                    return name.capitalize()  # Преобразуем первую букву в заглавную
+                    return name.capitalize()
                 return None
 
 
             def validate_surname(surname):
                 if surname and surname.isalpha():
-                    return surname.capitalize()  # Преобразуем первую букву в заглавную
+                    return surname.capitalize()
                 return None
 
 
