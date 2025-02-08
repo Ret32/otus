@@ -51,6 +51,5 @@ match enter_task:
             print(convert_case("привет_мир", force_case='snake'))
             print(convert_case("ПриветМир", force_case='camel'))
             print(convert_case("ПРИВЕТ_МИР"))
-
     case _:
         print("Невернный ввод. Выход из программы")
