@@ -52,6 +52,7 @@ match enter_task:
             print(convert_case("привет_мир", force_case='snake'))
             print(convert_case("ПриветМир", force_case='camel'))
             print(convert_case("ПРИВЕТ_МИР"))
+
     case "2":
             print("\nЗадача 2: Написать функцию проверяющую валидность введенной даты.\n")
 
@@ -75,14 +76,32 @@ match enter_task:
                 except ValueError:
                     return f"Дата '{date_string}' не валидна."
 
-            print(is_valid_date("29.02.2000"))
-            print(is_valid_date("29.02.2001"))
-            print(is_valid_date("31.04.1962"))
-            print(is_valid_date("15.08.2023"))
-            print(is_valid_date("31.12.2023"))
-            print(is_valid_date("32.01.2023"))
-            print(is_valid_date("01.13.2023"))
-            print(is_valid_date("15-08-2023"))
-            print(is_valid_date("15082023"))
+            test_date = ["29.02.2000", "29.02.2001", "31.04.1962", "15.08.2023", "31.12.2023", "32.01.2023", "01.13.2023",
+                         "15-08-2023","15082023"]
+            for date in test_date:
+                print(is_valid_date(date))
+
+    case "3":
+            print("\nЗадача 3: Функция проверки на простое число. Простые числа – это такие числа, которые делятся на себя и на единицу.\n")
+
+            import math
+
+            def is_prime(n):
+                if n < 2:
+                    return f"Исходное число: {n} | Результат: False (число меньше 2 не является простым)"
+                if n == 2:
+                    return f"Исходное число: {n} | Результат: True (2 - единственное четное простое число)"
+                if n % 2 == 0:
+                    return f"Исходное число: {n} | Результат: False (четные числа больше 2 не являются простыми)"
+
+                for i in range(3, int(math.sqrt(n)) + 1, 2):
+                    if n % i == 0:
+                        return f"Исходное число: {n} | Результат: False (делится на {i})"
+
+                return f"Исходное число: {n} | Результат: True (число простое)"
+
+            test_numbers = [1, 2, 3, 4, 5, 29, 30, 999]
+            for number in test_numbers:
+                print(is_prime(number))
     case _:
         print("Невернный ввод. Выход из программы")
