@@ -13,37 +13,31 @@ match enter_task:
                 if not string:
                     raise ValueError("Строка не должна быть пустой!")
 
-                is_snake_case = False
-                is_camel_case = False
-
                 if '_' in string:
-                    if all(part.islower() for part in string.split('_')):
-                        is_snake_case = True
-                    elif all(part.isupper() for part in string.split('_')):
-                        is_snake_case = True
-                    else:
+                    is_snake_case = all(part.islower() for part in string.split('_'))
+                    is_screaming_snake_case = all(part.isupper() for part in string.split('_'))
+
+                    if not (is_snake_case or is_screaming_snake_case):
                         raise ValueError("Строка должна быть формата snake_case или SCREAMING_SNAKE_CASE!")
-                elif string[0].isupper() and string[1:].isalnum() and not any(char == '_' for char in string):
-                    is_camel_case = True
+
+                    is_snake_case = True
+                elif string[0].isupper() and string.isalnum() and '_' not in string:
+                    is_snake_case = False
                 else:
                     raise ValueError("Строка должна быть формата snake_case или CamelCase")
 
                 if force_case:
                     if force_case == 'snake':
                         is_snake_case = True
-                        is_camel_case = False
                     elif force_case == 'camel':
                         is_snake_case = False
-                        is_camel_case = True
                     else:
                         raise ValueError("Параметр force_case должен содержать ключ 'snake' или 'camel'")
 
                 if is_snake_case:
-                    components = string.split('_')
-                    return ''.join(word.capitalize() for word in components)
+                    return ''.join(part.capitalize() for part in string.split('_'))
                 else:
-                    snake_case = ''.join(['_' + char.lower() if char.isupper() else char for char in string])
-                    return snake_case.lstrip('_')
+                    return ''.join(['_' + char.lower() if char.isupper() else char for char in string]).lstrip('_')
 
 
             print(convert_case("привет_мир"))
