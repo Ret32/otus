@@ -1,4 +1,4 @@
-enter_task = input("Введите номер задачи по теме 'Функции' от 1 до 5: ")
+enter_task = input("Введите номер задачи по теме 'Функции' от 1 до 4: ")
 
 match enter_task:
 
@@ -103,5 +103,113 @@ match enter_task:
             test_numbers = [1, 2, 3, 4, 5, 29, 30, 999]
             for number in test_numbers:
                 print(is_prime(number))
+    case "4":
+            print("\nЗадача 4: Пользователь в бесконечном цикле вводит данные пользователей: имя, затем фамилию, возраст и ID. \n"
+                  "Ввод продолжается до тех пор, пока не будет введено пустое поле. Пользователи заносятся в словарь, \n"
+                  "где ключ это ID пользователя, а остальные данные записываются в виде кортежа. Так же программа должна проверять, \n"
+                  "что имя и фамилия состоят только из символов и начинаются с большой буквы, если не с большой, то заменяет на большую, \n"
+                  "возраст должен быть числом от 18 до 60, ID - целое число, дополненное до 8 знаков незначащими нолями, \n"
+                  "ID должен быть уникальным. Дополнительно написать функцию, которая будет выводить полученный словарь в виде таблицы\n")
+
+
+            def format_id(user_id):
+                return str(user_id).zfill(8)
+
+
+            def validate_name(name):
+                if name and name.isalpha():
+                    return name.capitalize()  # Преобразуем первую букву в заглавную
+                return None
+
+
+            def validate_surname(surname):
+                if surname and surname.isalpha():
+                    return surname.capitalize()  # Преобразуем первую букву в заглавную
+                return None
+
+
+            def validate_age(age):
+                try:
+                    age = int(age)
+                    if 18 <= age <= 60:
+                        return age
+                except ValueError:
+                    return None
+                return None
+
+
+            def validate_id(user_id, existing_ids):
+                try:
+                    user_id = int(user_id)
+                    if format_id(user_id) not in existing_ids:
+                        return format_id(user_id)
+                except ValueError:
+                    return None
+                return None
+
+
+            def print_users_table(users):
+                print(f"{'ID':<10} {'Имя':<15} {'Фамилия':<15} {'Возраст':<10}")
+                print("-" * 50)
+                for user_id, (name, surname, age) in users.items():
+                    print(f"{user_id:<10} {name:<15} {surname:<15} {age:<10}")
+
+
+            def main():
+                users = {}
+                existing_ids = set()
+
+                while True:
+                    while True:
+                        name = input("Введите имя (или оставьте пустым для выхода): ").strip()
+                        if not name:
+                            print("Выход из программы.\n")
+                            if len(users) != 0:
+                                print("Печать таблицы:")
+                                print_users_table(users)
+                            return
+                        validated_name = validate_name(name)
+                        if validated_name:
+                            name = validated_name
+                            break
+                        else:
+                            print("Ошибка: Имя должно содержать только буквы.")
+
+                    while True:
+                        surname = input("Введите фамилию: ").strip()
+                        validated_surname = validate_surname(surname)
+                        if validated_surname:
+                            surname = validated_surname
+                            break
+                        else:
+                            print("Ошибка: Фамилия должна содержать только буквы.")
+
+                    while True:
+                        age = input("Введите возраст: ").strip()
+                        validated_age = validate_age(age)
+                        if validated_age is not None:
+                            age = validated_age
+                            break
+                        else:
+                            print("Ошибка: Возраст должен быть числом от 18 до 60.")
+
+                    while True:
+                        user_id = input("Введите ID: ").strip()
+                        validated_id = validate_id(user_id, existing_ids)
+                        if validated_id:
+                            user_id = validated_id
+                            break
+                        else:
+                            print("Ошибка: ID должен быть уникальным и целым числом.")
+
+                    users[user_id] = (name, surname, age)
+                    existing_ids.add(user_id)
+
+                print_users_table(users)
+
+
+            if __name__ == "__main__":
+                main()
+
     case _:
         print("Невернный ввод. Выход из программы")
