@@ -1,5 +1,5 @@
 enter_task = input("Введите номер задачи по теме 'Функции' от 1 до 4: ")
-
+#upd 15.02.25
 match enter_task:
 
     case "1":
