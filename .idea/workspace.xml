@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26efbd41-81d7-4f99-91d0-f007f0f9ac0f" name="Changes" comment="Задания 1-5">
-      <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
+    <list default="true" id="26efbd41-81d7-4f99-91d0-f007f0f9ac0f" name="Changes" comment="Функции">
+      <change afterPath="$PROJECT_DIR$/task4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ret32"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ret32&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ret32/otus.git",
-    "accountId": "16f677ac-c223-458d-a4dd-b6a896d0c552"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ret32/otus.git&quot;,
+    &quot;accountId&quot;: &quot;16f677ac-c223-458d-a4dd-b6a896d0c552&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lwIJLMU2Z63joIa6ZPFknPDNzO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,7 +49,10 @@
     "Python.main.executor": "Run",
     "Python.task1.executor": "Run",
     "Python.task2.executor": "Run",
+    "Python.task3.executor": "Run",
+    "Python.task4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -80,7 +84,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
       </set>
     </attachedChunks>
   </component>
@@ -149,12 +153,297 @@
       <option name="project" value="LOCAL" />
       <updated>1726093825843</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Конфиги">
+      <option name="closed" value="true" />
+      <created>1726093985856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726093985856</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Задание 1-5">
+      <option name="closed" value="true" />
+      <created>1726094015977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726094015977</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726150686187</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150686187</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726150745386</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726150745386</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726157592404</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726157592404</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726158675345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726158675345</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726168843425</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726168843425</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726173695333</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1726173695333</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726173739091</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1726173739091</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726173764815</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1726173764815</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726179827333</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1726179827333</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726179852886</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726179852886</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Базовые типы данных">
+      <option name="closed" value="true" />
+      <created>1726253610741</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726253610741</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726303479914</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1726303479914</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726307214871</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1726307214871</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726313950441</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1726313950441</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726314444291</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1726314444291</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726314777821</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1726314777821</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726431588576</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1726431588576</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726432888650</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1726432888650</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726432943722</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1726432943722</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726514496734</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1726514496734</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726514579071</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1726514579071</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726586712743</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1726586712743</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726586802470</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1726586802470</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1726586947257</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1726586947257</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1739022650012</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1739022650012</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Управляющие конструкции">
+      <option name="closed" value="true" />
+      <created>1739022823570</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1739022823570</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739022908095</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1739022908095</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739023522951</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1739023522951</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739024186766</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1739024186766</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739025158166</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1739025158166</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739026490769</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1739026490769</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739030439802</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1739030439802</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Функции">
+      <option name="closed" value="true" />
+      <created>1739030504368</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1739030504368</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Задания 1-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задания 1-5" />
+    <MESSAGE value="Конфиги" />
+    <MESSAGE value="Задание 1-5" />
+    <MESSAGE value="Базовые типы данных" />
+    <MESSAGE value="Управляющие конструкции" />
+    <MESSAGE value="Функции" />
+    <option name="LAST_COMMIT_MESSAGE" value="Функции" />
   </component>
 </project>
