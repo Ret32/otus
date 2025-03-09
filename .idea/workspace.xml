@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26efbd41-81d7-4f99-91d0-f007f0f9ac0f" name="Changes" comment="Файлы и сеть">
-      <change afterPath="$PROJECT_DIR$/hw-1/.ipynb_checkpoints/homework_1_62081_2ba3d5_168549_2f5b1d-441124-81a848-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/otus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/otus.iml" afterDir="false" />
+    <list default="true" id="26efbd41-81d7-4f99-91d0-f007f0f9ac0f" name="Changes" comment="Refactor">
+      <change afterPath="$PROJECT_DIR$/numpy&amp;pandas/Analyze and Visualize.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,34 +44,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.OOP_1.executor": "Run",
-    "Python.exceptions.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.task1.executor": "Run",
-    "Python.task2.executor": "Run",
-    "Python.task3.executor": "Run",
-    "Python.task4.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/d.danchenko/PycharmProjects/otus/python_basic",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.OOP_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exceptions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d.danchenko/PycharmProjects/otus/python_basic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\d.danchenko\PycharmProjects\otus\python_basic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\d.danchenko\PycharmProjects\otus\numpy&amp;pandas" />
       <recent name="C:\Users\d.danchenko\PycharmProjects\otus" />
       <recent name="C:\Users\d.danchenko\PycharmProjects\otus\python_basic" />
     </key>
@@ -120,23 +119,8 @@
       <option name="presentableId" value="Default" />
       <updated>1726084638210</updated>
       <workItem from="1739646025134" duration="11127000" />
-      <workItem from="1740263239342" duration="4920000" />
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <option name="closed" value="true" />
-      <created>1726085237520</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1726085237520</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <option name="closed" value="true" />
-      <created>1726085296944</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1726085296944</updated>
+      <workItem from="1740263239342" duration="5534000" />
+      <workItem from="1741508552655" duration="2754000" />
     </task>
     <task id="LOCAL-00004" summary="test">
       <option name="closed" value="true" />
@@ -514,7 +498,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740268059097</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Файлы и сеть">
+      <option name="closed" value="true" />
+      <created>1740268235410</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1740268235410</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1740268812595</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1740268812595</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +533,8 @@
     <MESSAGE value="Основы ОПП" />
     <MESSAGE value="Продвинутый ООП, исключения" />
     <MESSAGE value="Файлы и сеть" />
-    <option name="LAST_COMMIT_MESSAGE" value="Файлы и сеть" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/otus$exceptions.coverage" NAME="exceptions Coverage Results" MODIFIED="1740264263026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw_2" />
